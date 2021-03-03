@@ -1,0 +1,108 @@
+@font-face {
+  font-family:"d-din";
+  src: url("data/D-DIN.ttf") format("truetype");
+}
+
+* {
+    font-family: "d-din";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    height: 100%;
+    position: relative;
+
+    background:
+        linear-gradient(
+            cyan,
+            rgba(255,255,255,0) 
+        ),
+        linear-gradient(
+            -45deg,
+            magenta,
+            rgba(255,255,255,0) 
+        ),
+        linear-gradient(
+            45deg,
+            orange,
+            rgba(255,255,255,0) 
+        );
+    background-blend-mode: screen;
+}
+
+.title {
+    padding: 15px;
+    border: 2px solid white;
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+}
+
+hr {
+    width: 80%;
+    background: gray;
+    border: 1px solid gray;
+}
+
+.table-of-contents {
+    display: grid;
+    margin: 25px;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%; left: 0; bottom: 0; right: 0;
+    grid-template-columns: 100fr 5fr 100fr 5fr 100fr;
+}
+
+.table-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    transition: .3s;
+    box-shadow: 0 0 10px #202020;
+}
+
+.table-item:hover {
+    margin: 5px;
+    color: black;
+    border: 2px solid black;
+}
+
+.description {
+    font-weight:normal
+    font-size: 15px;
+}
+/*
+#music {
+    background: #ffb3ba;
+}
+
+#sound-effects {
+    background: #ffdfba;
+}
+
+#lighting {
+    background: #ffffba;
+}
+
+#camera-angle {
+    background: #baffc9;
+}
+
+#special-effects {
+    background: #bae1ff;
+}
+
+#thoughts {
+    background: orchid;
+}
+*/
