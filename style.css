@@ -5,9 +5,11 @@
 
 * {
     font-family: "d-din";
+    scroll-behavior: smooth;
 }
 
 body {
+    background: linear-gradient(white, lavenderblush);
     margin: 0;
     padding: 0;
 }
@@ -51,6 +53,17 @@ hr {
     border: 1px solid gray;
 }
 
+a {
+    text-decoration: none;
+}
+
+.text-hr {
+    max-width: 150%;
+    margin: 0px;
+    background: aquamarine;
+    border: 1px solid aquamarine;
+}
+
 .table-of-contents {
     display: grid;
     margin: 25px;
@@ -81,28 +94,38 @@ hr {
     font-weight:normal
     font-size: 15px;
 }
-/*
-#music {
-    background: #ffb3ba;
+
+.header-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#sound-effects {
-    background: #ffdfba;
+.header {
+    color: black;
+    font-size: 50px;
+    width: 20%;
+    text-align: center;
+    border: 2px solid black;
 }
 
-#lighting {
-    background: #ffffba;
+.text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#camera-angle {
-    background: #baffc9;
+.text-box {
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    background: black;
 }
 
-#special-effects {
-    background: #bae1ff;
+.white {
+    color: white;
 }
 
-#thoughts {
-    background: orchid;
+.section {
+    height: 95vh;
 }
-*/
