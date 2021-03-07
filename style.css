@@ -1,10 +1,10 @@
 @font-face {
-  font-family:"d-din";
-  src: url("Data/D-DIN.ttf") format("truetype");
+  font-family: "d-din";
+  src: url("/Data/D-DIN.ttf") format("truetype");
 }
 
 * {
-    font-family: "d-din";
+    font-family: "d-din", "courier";
     scroll-behavior: smooth;
 }
 
